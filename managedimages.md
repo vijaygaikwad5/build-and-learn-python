@@ -1,3 +1,18 @@
+Managed Images: Standardized, Secure, Org-Compliant Container Base Images
+
+Problem
+
+App teams across Kubernetes, OpenShift, and K3S clusters use many different base images.
+Pulling them directly from external registries creates major gaps:
+	•	Org-specific certificates missing
+	•	No enforced security baselines (non-root user, file permissions, TLS versions, etc.)
+	•	App-specific customizations repeated manually (Tomcat, Java, Spring Boot, Python, ML pip packages, NGINX, etc.)
+	•	Internet-blocked clusters can’t reach external registries/pip repos
+	•	No consistency → harder audits, higher vulnerabilities, unpredictable deployments
+
+
+
+
 Solution: “Managed Images”
 
 A centrally governed pipeline that builds, tests, hardens, and publishes organization-approved base images for all application teams.

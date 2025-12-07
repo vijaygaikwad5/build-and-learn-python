@@ -1,0 +1,51 @@
+<dashboard>
+  <label>My Daily Searches</label>
+  <description>Quick launcher for my most-used Splunk searches.</description>
+
+  <row>
+    <panel>
+      <title>Search Launcher</title>
+      <html>
+        <![CDATA[
+          <div style="padding: 20px; font-family: sans-serif;">
+
+            <!-- Example link block – duplicate and edit for each search -->
+            <div style="margin-bottom: 10px;">
+              <a href="https://splunk.mycorp.com/en-US/app/search/search?q=search%20index%3Dprod%20error"
+                 target="_blank"
+                 style="display:inline-block; padding:10px 16px;
+                        background:#2e3a46; color:#fff; text-decoration:none;
+                        border-radius:4px; font-size:14px;">
+                Prod – Error search
+              </a>
+            </div>
+
+            <!-- Add more blocks below this line -->
+
+          </div>
+        ]]>
+      </html>
+    </panel>
+  </row>
+</dashboard>
+
+
+<div style="margin-bottom: 10px;">
+  <a href="https://splunk.mycorp.com/en-US/app/search/search?q=search%20index%3Dprod%20error"
+     target="_blank"
+     style="display:inline-block; padding:10px 16px;
+            background:#2e3a46; color:#fff; text-decoration:none;
+            border-radius:4px; font-size:14px;">
+    Prod – Errors
+  </a>
+</div>
+
+<div style="margin-bottom: 10px;">
+  <a href="https://splunk.mycorp.com/en-US/app/search/search?q=search%20index%3Dprod%20sourcetype%3Dapi%20latency%3E1000"
+     target="_blank"
+     style="display:inline-block; padding:10px 16px;
+            background:#2e3a46; color:#fff; text-decoration:none;
+            border-radius:4px; font-size:14px;">
+    Prod – API latency > 1s
+  </a>
+</div>
